@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Generator</title>
+</head>
+<style>
+    body{
+        background-color:rgb(221, 212, 131);
+    }
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 2%;
+        color: rgb(97, 90, 145);
+        margin-left: 2%;
+    }
+    img{
+        height: 200px;
+        width: 200px;
+        margin-left: 2%;
+    }
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        font-style: italic;
+        color: rgb(97, 90, 145);
+    }
+</style>
+<body>
+    <div>
+        <h1>Text Chain For {{artist_name}}</h1>
+
+        <img src={{sauce}} alt="">
+    </div>
+
+
+    {% for member in members: %}
+        <p>{{member}}</p>
+    {% endfor %}
+</body>
+</html>
