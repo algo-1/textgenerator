@@ -4,5 +4,5 @@ Text is then generated from these lyrics using Markov chains and is displayed on
 
 I used a wrapper for the genius lyrics api called lyricsgenius. It was developed by @johnwmillr
 
-# Link to pictures of the website
+# Link To Pictures Of The Website
 https://1drv.ms/u/s!Ant3sKnbjQ2-hXI1J_D5Aqnp9f7i?e=75TUdd
