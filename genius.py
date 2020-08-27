@@ -1,7 +1,10 @@
 import lyricsgenius
-from secret import accessToken
+import os
+from dotenv import load_dotenv
 
-access_token= accessToken
+# load environmental variables (the api key)
+load_dotenv()
+access_token= os.getenv('accessToken')
 
 def return_lyrics(name_of_artist, access_token):
     # return lyrics 
@@ -15,7 +18,7 @@ def return_lyrics(name_of_artist, access_token):
     lyrics_list = []
     for ele in songs:
         #print(ele.lyrics)
-        lyrics_list.append(ele.lyrics)
+        lyrics_list.append(str(ele.lyrics))
 
     return " ".join(lyrics_list)
 
